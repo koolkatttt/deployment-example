@@ -1,0 +1,28 @@
+{%  extends "LoginApp/base.html" %}
+
+{% block body_block %}
+
+<h1>Please Log In.</h1>
+
+<form class="" action="{% 'LoginApp:Login' %}" method="post">
+
+{% csrf_token %}
+
+<label for="Username">Username</label>
+<input type="text" name="username" value="" placeholder="Enter username">
+
+<label for="">Password</label>
+<input type="paasword" name="password" value="">
+
+<input type="submit" name="" value="Login">
+  
+</form>
+
+
+
+
+
+
+
+
+{% endblock %}
